@@ -1,0 +1,78 @@
+.character-container {
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.search-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.search-container input {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1;
+  max-width: 300px;
+}
+
+.search-container button {
+  padding: 0.5rem 1rem;
+  background-color: #3c3e44;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #5c5f66;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.character-card {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+}
+
+.character-image {
+  width: 100%;
+  display: block;
+}
+
+.character-info {
+  padding: 0.5rem;
+}
+
+.character-info h3 {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.character-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.loading-state, .error-state, .empty-state {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #888;
+}
